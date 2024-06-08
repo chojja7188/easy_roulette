@@ -43,13 +43,17 @@ class _MainScreenState extends State<MainScreen> with SingleTickerProviderStateM
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Container(
-              padding: const EdgeInsets.all(64),
-              child: Roulette(controller: _controller)
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                  padding: const EdgeInsets.all(64),
+                  child: Roulette(controller: _controller)
+              ),
+            ],
           ),
-        ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
           onPressed: () async {
