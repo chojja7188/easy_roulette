@@ -1,4 +1,4 @@
-import 'package:easy_roulette/presentation/main_screen.dart';
+import 'package:easy_roulette/presentation/main/main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
